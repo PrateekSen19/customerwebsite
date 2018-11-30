@@ -1,0 +1,18 @@
+@charset "ISO-8859-1";
+<style>
+.header {
+position: absolute;
+height: 20px;
+width: 100px;
+}
+.leftpanel {
+position: absolute;
+height: 60px;
+width: 30px;
+}
+.footer {
+position: absolute;
+height: 20px;
+width: 10px;
+}
+</style>

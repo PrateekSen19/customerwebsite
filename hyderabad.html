@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>oil and gas map website</title>
+<style type="text/css" media="screen">
+  body {
+    font-family: verdana, sans-serif;
+    font-size: 12px;
+    }
+  
+  #header {
+    background: #2E86C1;
+    textcolor: white;
+    height: 90px;
+    width: 100%
+    }
+  
+  #content {
+    margin-left: 34%;
+    width: 80%;
+    height: 470px;
+    
+    }
+  
+  #footer {
+    clear: right;
+    background: white;
+    height: 100px;
+    width: 100%
+    }
+  
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+<style type="text/css">
+	#tfheader{
+		background-color:#c3dfef;
+	}
+	#tfnewsearch{
+		float:right;
+		padding:20px;
+	}
+	.tftextinput2{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#666;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton2 {
+		margin: 0;
+		padding: 5px 7px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:bold;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton2:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton2::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+</style>
+
+</head>
+<body>
+<center>
+<img src="Capturelast2.jpg" style="height: 200px; width: 500px;" /></center>
+<div id="header">
+<div class="w3-sidebar w3-bar-block w3-white w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large w3-hover-blue w3-hover-text-white"
+  onclick="w3_close()">Close &times;</button>
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-24 w3-hover-blue w3-hover-text-white">HOME</a>
+  <a href="hyderabad.html" class="w3-bar-item w3-button w3-padding-24 w3-hover-blue w3-hover-text-white">HYDERABAD</a>
+  <a href="vijayawada.html" class="w3-bar-item w3-button w3-padding-24 w3-hover-blue w3-hover-text-white">VIJAYAWADA</a>
+  <a href="vizag.html" class="w3-bar-item w3-button w3-padding-24 w3-hover-blue w3-hover-text-white">VIZAG</a>
+  <a href="distance calculator.html" class="w3-bar-item w3-button w3-padding-24 w3-hover-blue w3-hover-text-white">DISTANCE CALCULATOR</a>
+</div>
+
+<div style="color: white;">
+  <button class="w3-button w3-#2E86C1 w3-xxxlarge w3-hover-white w3-hover-text-blue" onclick="w3_open()">&#9776;</button>
+ <table align="right"><tr><th><form id="tfnewsearch" method="get" action="http://www.google.com">
+		        <input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="120" value="Search our website"><input type="submit" value="Search" class="tfbutton2">
+		</form></th>
+		<th style="height: 80px; width: 200px;"><font size="4"><a href="contact.html">CONTACT</a></font></th><th style="height: 80px; width: 200px;"><font size="4"><a href="about.html">ABOUT</a></font></th></tr></table>
+</div>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script type="text/javascript">
+window.onload = function(){ 
+	//Get submit button
+	var submitbutton = document.getElementById("tfq");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventListener("click", function() {
+			if (submitbutton.value == 'Search our website'){//Customize this text string to whatever you want
+				submitbutton.value = '';
+			}
+		});
+	}
+}
+</script>
+
+</div>
+<div class="content">
+<button class="collapsible" style="background-color: white; color: #2E86C1; cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;"><h1>Site Information</h1></button>
+<div class="content" style="padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: white; align: center; color: black">
+  <p>Oil and Gas Ltd. (OGL) discovered new oil and gas reserves in Hyderabad.
+
+The discovery by state run enterprise has raised hopes of fresh hydrocarbon openings. The findings of hydrocarbon surfaced through an exploratory well Chhutto-1 while in hopes of further findings, two more wells are to be drilled in the same licence areas, of which one has already been marked for immediate drilling.
+
+OGL is a joint venture of Nim Block owning 95 percent share with its remaining five percent shareholding of the federal government through Government Holdings (Pvt) Ltd (GHPL).
+
+Moreover, Chhutto-1 was drilled and tested using OGL’s in-house expertise. The well was drilled down to the depth of 3,820 metres.
+
+The well tested 8.66 million standard cubic feet per day (mmscfd) of gas and 285 barrels per day (bpd) of condensate through 32/64-inch choke at wellhead flowing pressure of 2,100 per square inch from “A” sands of the Lower Goru formation.
+
+In a statement, the company said that the discovery was the result of aggressive exploration strategy adopted by the OGL.
+
+“It has opened a new avenue and would add to the hydrocarbon reserves base on the OGDCL and the country”, statement added.
+The company hit a record production level of 50,172 bpd of oil a few months ago, securing 57pc share in the country’s total production of about 88,000 bpd.
+
+Moreover, meets around 12pc of its oil requirement from indigenous resources. Historically, the OGL’s production has hovered between 35,000 and 45,000 bpd.</p>
+</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+<div id="map" style="width: 100%;
+height: 470px";></div>
+
+<script>
+function myMap() {
+	  var myCenter = new google.maps.LatLng(17.3850,78.4867);
+	  var mapCanvas = document.getElementById("map");
+	  var mapOptions = {center: myCenter, zoom: 5};
+	  var map = new google.maps.Map(mapCanvas, mapOptions);
+	  var marker1 = new google.maps.Marker({position:myCenter,
+		  map:map,
+		  title:"Hyderabad;oil ltd.;LatLng(17.3850,78.4867)"});
+	  marker1.setMap(map);
+	  google.maps.event.addListener(marker1,'click',function() {
+	    var infowindow = new google.maps.InfoWindow({
+	      content:"<h3><b>Hyderabad</h3><br>oil ltd.<br>LatLng(17.3850,78.4867)"
+	    });
+	  infowindow.open(map,marker1);
+	  });
+	}
+	</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA10NHfLe1aKJDyDgEWAeOjBJdVs6doU-4&callback=myMap"></script>
+</div>
+<div id="footer" align="center">
+<h5><font color="#2E86C1">Copyright @ 2018 ACE Computer Enterprises. All rights reserved. Privacy Policy</font></h5>
+<h6>
+<b><a href="contact.html" style="color: #2E86C1;"/>CONTACT</a></b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b><a href="about.html" style="color: #2E86C1;"/>ABOUT</a></b></h6></th></tr></table>
+</div>
+</body>
+</html>

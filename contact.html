@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>oil and gas map website</title>
+<style type="text/css" media="screen">
+  body {
+    font-family: verdana, sans-serif;
+    font-size: 12px;
+    }
+  
+  #header {
+    background: #2E86C1;
+    textcolor: white;
+    height: 90px;
+    width: 100%
+    }
+  
+  #content {
+    margin-left: 34%;
+    width: 80%;
+    height: 470px;
+    
+    }
+  
+  #footer {
+    clear: right;
+    background: white;
+    height: 100px;
+    width: 100%
+    }
+  
+  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="ROBOTS" content="NOINDEX, NOFOLLOW" />
+<style type="text/css">
+	#tfheader{
+		background-color:#c3dfef;
+	}
+	#tfnewsearch{
+		float:right;
+		padding:20px;
+	}
+	.tftextinput2{
+		margin: 0;
+		padding: 5px 15px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		color:#666;
+		border:1px solid #0076a3; border-right:0px;
+		border-top-left-radius: 5px 5px;
+		border-bottom-left-radius: 5px 5px;
+	}
+	.tfbutton2 {
+		margin: 0;
+		padding: 5px 7px;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size:14px;
+		font-weight:bold;
+		outline: none;
+		cursor: pointer;
+		text-align: center;
+		text-decoration: none;
+		color: #ffffff;
+		border: solid 1px #0076a3; border-right:0px;
+		background: #0095cd;
+		background: -webkit-gradient(linear, left top, left bottom, from(#00adee), to(#0078a5));
+		background: -moz-linear-gradient(top,  #00adee,  #0078a5);
+		border-top-right-radius: 5px 5px;
+		border-bottom-right-radius: 5px 5px;
+	}
+	.tfbutton2:hover {
+		text-decoration: none;
+		background: #007ead;
+		background: -webkit-gradient(linear, left top, left bottom, from(#0095cc), to(#00678e));
+		background: -moz-linear-gradient(top,  #0095cc,  #00678e);
+	}
+	/* Fixes submit button height problem in Firefox */
+	.tfbutton2::-moz-focus-inner {
+	  border: 0;
+	}
+	.tfclear{
+		clear:both;
+	}
+</style>
+
+</head>
+<body>
+<center>
+<img src="Capturelast2.jpg" style="height: 200px; width: 500px;" /></center>
+<div id="header">
+<div class="w3-sidebar w3-bar-block w3-white w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large w3-hover-blue w3-hover-text-white"
+  onclick="w3_close()">Close &times;</button>
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-24 w3-hover-blue w3-hover-text-white">HOME</a>
+  <a href="hyderabad.html" class="w3-bar-item w3-button w3-padding-24 w3-hover-blue w3-hover-text-white">HYDERABAD</a>
+  <a href="vijayawada.html" class="w3-bar-item w3-button w3-padding-24 w3-hover-blue w3-hover-text-white">VIJAYAWADA</a>
+  <a href="vizag.html" class="w3-bar-item w3-button w3-padding-24 w3-hover-blue w3-hover-text-white">VIZAG</a>
+  <a href="distance calculator.html" class="w3-bar-item w3-button w3-padding-24 w3-hover-blue w3-hover-text-white">DISTANCE CALCULATOR</a>
+</div>
+
+<div style="color: white;">
+  <button class="w3-button w3-#2E86C1 w3-xxxlarge w3-hover-white w3-hover-text-blue" onclick="w3_open()">&#9776;</button>
+ <table align="right"><tr><th><form id="tfnewsearch" method="get" action="http://www.google.com">
+		        <input type="text" id="tfq" class="tftextinput2" name="q" size="21" maxlength="120" value="Search our website"><input type="submit" value="Search" class="tfbutton2">
+		</form></th>
+		<th style="height: 80px; width: 200px;"><font size="4"><a href="contact.html">CONTACT</a></font></th><th style="height: 80px; width: 200px;"><font size="4"><a href="about.html">ABOUT</a></font></th></tr></table>
+</div>
+
+<script>
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+<script type="text/javascript">
+window.onload = function(){ 
+	//Get submit button
+	var submitbutton = document.getElementById("tfq");
+	//Add listener to submit button
+	if(submitbutton.addEventListener){
+		submitbutton.addEventListener("click", function() {
+			if (submitbutton.value == 'Search our website'){//Customize this text string to whatever you want
+				submitbutton.value = '';
+			}
+		});
+	}
+}
+</script>
+
+</div>
+<div class="content"><br>
+<br>
+<font size="4">
+<h1 align="center"><font color="#2E86C1">Contact</font></h1><br>
+<font size="5"><p>Want to support our work, ask us a question, or just chat about oil and gas extraction? Contact us using the form or contact information below.</p></font>
+<font size="5"><ul>
+<li>General inquiries / headquarters in Camp Hill, PA, please call: + 1 (717) 303-0403,&nbsp;<a href="mailto:info@fractracker.org" target="_blank">info@fractracker.org</a></li>
+<li>Media questions, please contact:&nbsp;Sam Rubright&nbsp;at +1 (202) 630-6426, <a href="mailto:malone@fractracker.org">malone@fractracker.org</a> (email preferred)</li>
+</ul></font>
+<br>
+<font size="5"> 
+<table itemscope="itemscope" itemtype="https://schema.org/Table" border="2" border color="#2E86C1" align="center"><caption>Office Locations and Contact Information</caption><tbody><tr><th>Office</th><th>Address</th></tr><tr><th>Headquarters</th><td>1845 Market St, Ste 204, Camp Hill, PA 17011<br>
+ (717) 303-0403, info@fractracker.org</td></tr><tr><th>CA</th><td>1440 Broadway, Ste 205, Oakland, CA 94612</td></tr><tr><th>DC</th><td>777 6th St NW, Ste 700, Washington DC, 20001</td></tr><tr><th>OH</th><td>3558 Lee Rd, Shaker Heights, OH 44120</td></tr><tr><th>NY</th><td>115 The Commons, Ithaca, NY 14850</td></tr><tr><th>PA</th><td>112 Sherman St, Pittsburgh, PA 15209</td></tr></tbody></table>
+</font>
+</div>
+<br>
+<br>
+<div id="footer" align="center">
+<h5><font color="#2E86C1">Copyright @ 2018 ACE Computer Enterprises. All rights reserved. Privacy Policy</font></h5>
+<h6>
+<b><a href="contact.html" style="color: #2E86C1;"/>contact</a></b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<b><a href="about.html" style="color: #2E86C1;"/>about</a></b></h6></th></tr></table>
+</div>
+</body>
+</html>
